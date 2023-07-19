@@ -12,6 +12,7 @@ html {
 
 .active{
     color: #e48c71;
+  padding: 30px;
 }
 @layer components{
     .page_title{
@@ -24,3 +25,19 @@ html {
     }
 }
 
+
+  
+
+
+
+  .content {
+  
+      display: none;
+ 
+  }
+  
+  .active-content {
+      display: flex;
+  }
+  
+  

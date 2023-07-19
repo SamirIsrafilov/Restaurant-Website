@@ -36,7 +36,7 @@ const Nav = () => {
                         <a href="#about" onClick={() => setActiveNav('#about')} className={`title ${activeNav === '#about' ? 'active' : ''}`} >ABOUT</a>
                     </li>
                     <li className='page_title'>
-                        <a href="#" className='title'>MENU</a>
+                        <a href="#menu" onClick={() => setActiveNav('#menu')} className={`title ${activeNav === '#menu' ? 'active' : ''}`} >MENU</a>
                     </li>
                     <li className='page_title'>
                         <a href="#" className='title'>JOBS</a>

@@ -2,6 +2,7 @@ import React from 'react';
 import Img1 from '../img/restauran_img.jpeg';
 import { MdGrass,MdCalendarMonth,MdMasks } from 'react-icons/md';
 import About from './About';
+import Menu from './Menu';
 
 const Home = () => {
   return (
@@ -65,6 +66,7 @@ const Home = () => {
       </div>
 
       <About/>
+      <Menu/>
     </div>
   )
 }

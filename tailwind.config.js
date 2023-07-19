@@ -14,7 +14,7 @@ module.exports = {
      
       'xl': {'min': '1279px'},
      
-      'lg': {'min': '1023px'},
+      'lg': {'min': '1024px'},
       
       'md': {'min': '800px'},
      
