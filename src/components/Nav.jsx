@@ -45,7 +45,7 @@ const Nav = () => {
                         <a href="#" className='title flex '>TEMPLATE <HiChevronDown className='text-[20px] ms-2 ' /></a>
                     </li>
                     <li>
-                        <button className='w-full md:w-auto md:ml-5 md:px-[40px] px-[20px] py-[20px] 
+                        <button className='w-full md:w-auto md:ml-5 lg:px-[40px] px-[20px] py-[20px] 
                                 bg-[#f1d4ca] text-left border-b-2 md:border-b-0 md:border-l-2 md:rounded-e border-black font-semibold
                                  hover:bg-black hover:text-white'>BOOK A TABLE</button>
                     </li>
