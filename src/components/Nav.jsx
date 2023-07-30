@@ -39,7 +39,7 @@ const Nav = () => {
                         <a href="#menu" onClick={() => setActiveNav('#menu')} className={`title ${activeNav === '#menu' ? 'active' : ''}`} >MENU</a>
                     </li>
                     <li className='page_title'>
-                        <a href="#" className='title'>JOBS</a>
+                        <a href="#jobs" onClick={() => setActiveNav('#jobs')} className={`title ${activeNav === '#jobs' ? 'active' : ''}`} >JOBS</a>
                     </li>
                     <li className='page_title'>
                         <a href="#" className='title flex '>TEMPLATE <HiChevronDown className='text-[20px] ms-2 ' /></a>

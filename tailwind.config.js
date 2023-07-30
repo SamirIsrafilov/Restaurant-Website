@@ -5,10 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    container: {
-      center: true,
-      margin: '2rem',
-    },
+    // container: {
+    //   center: true,
+    //   margin: '2rem',
+    // },
     screens: {
       '2xl': {'min': '1535px'},
      
