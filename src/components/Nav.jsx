@@ -41,9 +41,9 @@ const Nav = () => {
                     <li className='page_title'>
                         <a href="#jobs" onClick={() => setActiveNav('#jobs')} className={`title ${activeNav === '#jobs' ? 'active' : ''}`} >JOBS</a>
                     </li>
-                    <li className='page_title'>
+                    {/* <li className='page_title'>
                         <a href="#" className='title flex '>TEMPLATE <HiChevronDown className='text-[20px] ms-2 ' /></a>
-                    </li>
+                    </li> */}
                     <li>
                         <button className='w-full md:w-auto md:ml-5 lg:px-[40px] px-[20px] py-[20px] 
                                 bg-[#f1d4ca] text-left border-b-2 md:border-b-0 md:border-l-2 md:rounded-e border-black font-semibold
