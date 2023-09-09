@@ -6,7 +6,7 @@ import logo from '../img/yonk.logo.svg';
 
 const Nav = () => {
     let [open, setOpen] = useState(false);
-    const [canvas, setCanvas] = useState(true)
+    const [canvas, setCanvas] = useState(false)
     const [activeNav, setActiveNav] = useState('#')
 
     return (
