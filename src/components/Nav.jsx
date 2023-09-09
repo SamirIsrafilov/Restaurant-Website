@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
-import { HiChevronDown } from 'react-icons/hi'
 import { GrClose } from 'react-icons/gr'
 import logo from '../img/yonk.logo.svg';
-import { NavLink } from 'react-router-dom';
+
 
 const Nav = () => {
     let [open, setOpen] = useState(false);
-    const [canvas, setCanvas] = useState(false)
+    const [canvas, setCanvas] = useState(true)
     const [activeNav, setActiveNav] = useState('#')
 
     return (
@@ -56,9 +55,11 @@ const Nav = () => {
 
 
             <div className={`bg-[#e48c71] absolute right-0 top-0 transition-all border-s-2 border-[#000] z-40
-                 duration-500 ease-in h-screen w-[100%] md:w-[25%] ${canvas ? 'opacity-100 w-auto h-screen ' : '-right-[100%] md:-right-[25%]'}`}>
+                 duration-500 ease-in h-screen w-[100%] md:w-[25%] ${canvas ? 'opacity-100 w-[100%] h-screen ' : '-right-[100%] md:-right-[25%] w-0'}`}>
                 <button className='bg-[#e48c71] p-3 border-2 border-[#000] hover:bg-white rounded absolute left-[20px] top-[20px]'
-                    onClick={() => setCanvas(!canvas)}><GrClose /></button>
+                    onClick={() =>{ setCanvas(!canvas)
+                        console.log(canvas);}
+                    }><GrClose /></button>
 
                 <div className='p-3' >
                     <h1 className='mt-[150px] text-[20px] font-extrabold'>RESERVATIONS</h1>
