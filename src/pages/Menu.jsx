@@ -14,8 +14,8 @@ const [active,setActive]=useState(true);
         ToggleState === index ? className : "";
     return (
         <div id='menu'>
-            <div className='bg-[#e48c71] py-[30px]  md:py-[100px] border-y-2 border-[#000]'>
-                <div className='mx-[30px] md:mx-[100px] bg-[#fff] border-2 border-[#000] rounded-md p-[20px] md:p-[80px]'>
+            <div className='bg-[#e48c71] py-[30px]  md:py-[100px] border-y-2 border-[#000]' >
+                <div data-aos="zoom-in" className='mx-[30px] md:mx-[100px] bg-[#fff] border-2 border-[#000] rounded-md p-[20px] md:p-[80px]'>
                     <nav>
                         <ul className='flex flex-wrap'>
                             <li className={`mx-2 ${getActiveClass(1)} ${  ToggleState === 1 ? "bg-[#f1d4ca]" : ""}  `}

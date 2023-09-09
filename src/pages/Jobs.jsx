@@ -5,10 +5,10 @@ import Img2 from '../img/jobs_img2.jpeg';
 
 const Jobs = () => {
   return (
-    <div id='jobs' className='y-12'>
+    <div id='jobs' className='py-12' >
       <div className='mx-[10px] md:mx-[100px] md:p-5'>
         <div className=' grid gap-6 grid-cols-1 md:grid-cols-2 '>
-          <div className=' border-2 border-[#000]'>
+          <div className=' border-2 border-[#000]' data-aos="zoom-in">
             <div className='p-3 md:p-6 bg-[#E48C71] relative'>
               <img src={Img1} className='border-2 w-[100%] border-[#000]' alt="" />
               <div className='bg-[#fff] inline-flex items-center p-2 border-2 border-[#000] rounded absolute bottom-[40px] left-[20px] md:left-[40px]'>
@@ -41,7 +41,7 @@ const Jobs = () => {
           </div>
 
 
-          <div className=' border-2 border-[#000]'>
+          <div className=' border-2 border-[#000]' data-aos="zoom-in">
             <div className='p-3 md:p-6 bg-[#E48C71] relative'>
               <img src={Img2} className='border-2 border-[#000] w-[100%]' alt="" />
               <div className='bg-[#fff] inline-flex items-center p-2 border-2 border-[#000] rounded absolute bottom-[40px] left-[20px] md:left-[40px]'>

@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     let [open, setOpen] = useState(false);
+    const [canvas, setCanvas] = useState(false)
     const [activeNav, setActiveNav] = useState('#')
 
     return (
@@ -25,8 +26,7 @@ const Nav = () => {
                     }
                 </div>
                 <ul className={`md:flex md:items-center md:pb-0  absolute md:static
-                 bg-white md:z-auto z-[-1] left-0 w-full  md:w-auto md:pl-5  transition-all 
-                 duration-500 ease-in ${open ? 'opacity-100 top-0 h-screen md:h-auto' : 'left-[600px]'} md:opacity-100 opacity-0 border-2 border-black rounded`}>
+                 bg-white md:z-auto z-[-1] left-0 w-full  md:w-auto md:pl-5    ${open ? 'opacity-100 top-0 h-screen md:h-auto' : 'left-[600px]'} md:opacity-100 opacity-0 border-2 border-black rounded`}>
 
                     <li className='page_title'>
                         <a href="#" onClick={() => setActiveNav('#')} className={`title ${activeNav === '#' ? 'active' : ''} ${({ isActive }) => (isActive ? "text-[#e48c71]" : 'none')}`}>HOME</a>
@@ -47,10 +47,35 @@ const Nav = () => {
                     <li>
                         <button className='w-full md:w-auto md:ml-5 lg:px-[40px] px-[20px] py-[20px] 
                                 bg-[#f1d4ca] text-left border-b-2 md:border-b-0 md:border-l-2 md:rounded-e border-black font-semibold
-                                 hover:bg-black hover:text-white'>BOOK A TABLE</button>
+                                 hover:bg-black hover:text-white'
+                            onClick={() => setCanvas(!canvas)}
+                        >BOOK A TABLE</button>
                     </li>
                 </ul>
             </nav>
+
+
+            <div className={`bg-[#e48c71] absolute right-0 top-0 transition-all border-s-2 border-[#000] z-40
+                 duration-500 ease-in h-screen w-[100%] md:w-[25%] ${canvas ? 'opacity-100 w-auto h-screen ' : '-right-[100%] md:-right-[25%]'}`}>
+                <button className='bg-[#e48c71] p-3 border-2 border-[#000] hover:bg-white rounded absolute left-[20px] top-[20px]'
+                    onClick={() => setCanvas(!canvas)}><GrClose /></button>
+
+                <div className='p-3' >
+                    <h1 className='mt-[150px] text-[20px] font-extrabold'>RESERVATIONS</h1>
+
+                    <form action="">
+                        <input className='p-4 w-full border-2 border-[#000] focus:outline-none mt-4 placeholder:font-semibold  placeholder:text-[#000]' type="text" placeholder='Full Name' required />
+                        <input className='p-4 w-full border-2 border-[#000] focus:outline-none mt-4 placeholder:font-semibold  placeholder:text-[#000]' type="text" placeholder='Phone Number' required />
+                        <input className='p-4 w-full border-2 border-[#000] focus:outline-none mt-4 placeholder:font-semibold  placeholder:text-[#000]' type="text" placeholder='Data & Time' required />
+                        <input className='p-4 w-full border-2 border-[#000] focus:outline-none mt-4 placeholder:font-semibold  placeholder:text-[#000]' type="text" placeholder='Number of People' required />
+
+                        <p className='mt-5 font-bold'>All fields are required.</p>
+
+                        <button className='border-2 border-black mt-4 py-[17.5px] px-[50px] bg-[#f1d4ca] uppercase text-[14px] font-bold rounded-md 
+           hover:translate-y-[-5px] ease-in-out duration-300'>Book a Table</button>
+                    </form>
+                </div>
+            </div>
         </div>
     )
 }
